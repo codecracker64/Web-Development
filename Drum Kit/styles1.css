@@ -1,0 +1,66 @@
+body{
+  text-align:center;
+  background-color:#283149;
+}
+
+h1{
+  font-size:7rem;
+  text-decoration:underline;
+  text-shadow: 4px 0 grey;
+  font-family: 'Monoton', cursive;
+  font-weight: lighter;
+}
+
+footer{
+  margin-top:9rem;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.drum{
+  height:9rem;
+  width:9rem;
+  margin: 10px;
+  border: 10px solid #476072;
+  border-radius: 20px;
+  font-size:4.5rem;
+  text-shadow:2px 0 grey;
+  line-height:2;
+  box-shadow:0 9px;
+  font-family: 'Qahiri', sans-serif;
+}
+
+.drum:hover{background-color:#DDDDDD}
+
+.drum:active,.button-active{
+box-shadow:0 6px;
+transform:translateY(4px);
+}
+
+.w{
+  background-image:linear-gradient(rgba(0,0,255,0.5), rgba(255,255,0,0.5)),url("images/tom1.png");
+}
+
+.a{
+  background-image:linear-gradient(rgba(100,100,200,0.5),rgba(200,100,100,0.7)),url("images/tom2.png");
+}
+
+.s{
+  background-image:linear-gradient(rgba(255,184,138,0.6),rgba(136,191,255,0.5)),url("images/tom3.png");
+}
+
+.d{
+  background-image:linear-gradient(rgba(255, 173,51,0.3),rgba(255,255,51,0.7)),url("images/tom4.png")
+}
+
+.j{
+  background-image:linear-gradient(rgba(51, 102, 255,0.5),rgba(255, 51, 102,0.5)),url("images/snare.png")
+}
+
+.k{
+  background-image:linear-gradient(rgba(255,255,0,0.5),rgba(0,0,255,0.5)),url("images/crash.png")
+}
+
+.l{
+  background-image:linear-gradient(rgba(0,0,255,0.5), rgba(255,255,0,0.5)),url("images/kick.png");
+}

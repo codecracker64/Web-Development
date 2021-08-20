@@ -1,0 +1,39 @@
+body{
+    background-color: #011F3F;
+}
+h1{
+  color:white;
+  font-family: 'Black Ops One', cursive;
+  font-size: 4rem;
+}
+.container{
+  text-align: center;
+}
+.box{
+  height:225px;
+  width:225px;
+  display: inline-block;
+  margin:30px;
+  border:8px solid black;
+  border-radius:40px;
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.blue{
+  background-color: blue;
+}
+.yellow{
+  background-color: yellow;
+}
+
+.pressed{
+  box-shadow: 0 0 20px white;
+}
+
+.gameOver{
+  background-color: red;
+}
