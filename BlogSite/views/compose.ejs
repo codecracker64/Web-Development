@@ -1,0 +1,9 @@
+<%-include('partials/header.ejs')%>
+<div class="container">
+    <h1>Compose</h1>
+    <form method="POST" action="/compose">
+        <input type="text" name="composeText">
+        <button type="submit" name="composePostBtn" class="btn btn-light">post</button>
+    </form>
+</div>
+<%-include('partials/footer.ejs')%>
