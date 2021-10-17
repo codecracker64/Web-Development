@@ -1,10 +1,14 @@
 <%- include('partials/header.ejs') %>
-<div class="container">
-  <h1>Home</h1>
-  <p>
-    <%= home %>
-  </p>
-</div>
-</body>
-</html>
+  <div class="container">
+    <div class="container-wrap">
+      <h1>Home</h1>
+      <p>
+        <%= home %>
+      </p>
+      <% posts.forEach(function(posts){ %>
+        <h2><%= posts.title %></h2>
+        <p><%= posts.body.substring(0,100) +"..." %><a href="/posts/<%= posts.title %>">Read more</a></p>
+      <% }) %>
+    </div>
+  </div>
 <%- include('partials/footer.ejs') %>

@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended:true})) //we use this line everytime we 
 // })
 
 app.get("/bmiCalculator",function(req,res){
-  // res.sendFile(__dirname+"/bmiCalculator.html")
+  res.sendFile(__dirname+"/bmiCalculator.html")
   console.log(__dirname)
 })
 

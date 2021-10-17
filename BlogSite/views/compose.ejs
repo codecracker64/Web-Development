@@ -1,9 +1,16 @@
 <%-include('partials/header.ejs')%>
-<div class="container">
+<div class="container composeContainer">
     <h1>Compose</h1>
     <form method="POST" action="/compose">
-        <input type="text" name="composeText">
-        <button type="submit" name="composePostBtn" class="btn btn-light">post</button>
+        <div class="form-group">
+            <label class=composeLabel>Title</label>
+            <input type="text" class="form-control" name="postTitle">
+        </div>
+        <div class="form-group">
+            <label class="composeLabel">Post</label>
+            <textarea class="form-control" rows="7" name="postBody"></textarea> <!--close a text area tag else it will display code-->
+        </div>
+        <button type="submit" name="composePostBtn" class="btn btn-primary">Publish</button>
     </form>
 </div>
 <%-include('partials/footer.ejs')%>
