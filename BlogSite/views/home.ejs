@@ -7,7 +7,7 @@
       </p>
       <% posts.forEach(function(posts){ %>
         <h2><%= posts.title %></h2>
-        <p><%= posts.body.substring(0,100) +"..." %><a href="/posts/<%= posts.title %>">Read more</a></p>
+        <p><%= posts.body.substring(0,100) +"..." %><a href="/posts/<%= posts.id%>">Read more</a></p>
       <% }) %>
     </div>
   </div>

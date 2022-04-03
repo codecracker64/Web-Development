@@ -55,7 +55,7 @@ app.post("/",function(req,res){
     console.log(res)
     res.on("data",function(data){
       const result=JSON.parse(data)
-      // console.log(result)
+      console.log(result)
       // console.log(result.status)
     })
   })

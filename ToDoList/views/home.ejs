@@ -1,0 +1,34 @@
+<%- include('partials/header.ejs')  %>
+
+<div class='box' id='title'>
+  <h1><%=listName%></h1>
+</div>
+
+
+<div class='box' id='heading'>
+  
+  <h1 style="margin:0;display: inline-block;"><%=date%></h1>
+</div>
+
+
+<div class='box' id='listItems'>
+  <% listItems.forEach(function(item){ %>
+    <form action="/delete" method="post">
+      <div class='item'>
+        <input type='checkbox' name="checkBox" value="<%=item.id%>" onchange="this.form.submit()">  <!--adding onChange because no submit button-->
+        <input type="hidden" name="listName" value="<%=listName%>">
+        <p class='list-p' name="checkedItem"><%=item.item%></p>
+        </div>
+    </form>
+  <%})%>
+</div>
+
+<div class="box">
+  <form class="submit" action='/' method="post">
+    <input type='text' name='item' placeholder="New Item" autocomplete="off" autofocus/>
+    <input type="hidden" name="listName" value="<%=listName%>">
+    <button type="submit" name='button'>+</button>
+  </form>
+</div>
+
+<% -include('partials/footer.ejs') %>
