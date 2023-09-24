@@ -4,5 +4,11 @@
         <h1><%= title %></h1>
         <p> <%= body %></p>
     </div>
+    
+    <form method="POST" action="/posts/<%= id %>">
+        <div>
+            <button type="submit" name="deletePostBtn" class="btn btn-secondary">Delete</button>
+        </div>
+    </form>
 </div>
 <%- include('partials/footer') %>
