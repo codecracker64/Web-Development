@@ -68,8 +68,7 @@ app.post("/compose",function(req,res){
 
 app.get("/posts/:post",function(req,res){
   id=req.params.post;
-  // console.log("entered url: "+url)
-  Items.findOne({id:id},(err,foundItems)=>{
+  Items.findOne({_id:id},(err,foundItems)=>{
     if(!err){
       res.render('posts',{title:foundItems.title,body:foundItems.body});
     }

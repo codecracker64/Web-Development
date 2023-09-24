@@ -73,6 +73,19 @@ body{     /*to keep footer at bottom*/
   margin-right: 100px;
   flex: 1 0 auto;       /*to keep footer at bottom*/
 }
+.container-wrap{
+  margin-bottom: 50px;
+}
+.posts p{
+  font-size: medium;
+  color: gray;
+}
+.post-head{
+  display: inline;
+}
+.post-head h3{
+  width: auto;
+}
 .composeContainer label{
   font-weight: bold;
 }
